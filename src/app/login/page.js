@@ -5,7 +5,7 @@ import { Btn } from "@/components/btn";
 export default function Login() {
   return (
     <div className="w-full flex h-screen ">
-      <div className="w-1/2 flex justify-center items-center ">
+      <div className="w-1/2 flex justify-center items-center bg-white ">
         <div className="flex  flex-col justify-start items-center gap-10 ">
           <div className="p-[5px] justify-start items-center gap-[10px] flex">
             <Vector />

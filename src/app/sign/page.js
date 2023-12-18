@@ -5,7 +5,7 @@ import { Btn } from "@/components/btn";
 export default function Sign() {
   return (
     <div className="w-full flex h-screen ">
-      <div class="w-1/2 flex justify-center items-center">
+      <div class="w-1/2 flex justify-center items-center bg-white">
         <div className="flex flex-col justify-start items-center gap-10">
           <div class="p-[5px] justify-start items-center gap-[10px] flex">
             <Vector />
@@ -44,7 +44,7 @@ export default function Sign() {
             </div>
             <div className="w-[77px] px-3 rounded-[20px] justify-center items-center gap-1 flex">
               <div className="text-blue-600 text-base font-normal font-['Roboto'] leading-normal">
-                <Link href={`/login`}>Login</Link>
+                <Link href={`/signup`}>Login</Link>
               </div>
             </div>
           </div>
