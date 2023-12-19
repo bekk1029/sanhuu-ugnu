@@ -5,7 +5,7 @@ import { Gline } from "@/assets/Gline";
 import Link from "next/link";
 export default function Currency() {
   return (
-    <div className="w-full h-screen flex flex-col pt-40 justify-start items-center bg-white gap-[141px]">
+    <div className="w-full h-screen flex flex-col pt-10 justify-start items-center bg-white gap-[141px]">
       <div class="flex-col justify-start items-center gap-12 flex">
         <Layout />
         <div class="justify-start items-center gap-4 flex">

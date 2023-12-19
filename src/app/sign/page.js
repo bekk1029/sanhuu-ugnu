@@ -46,7 +46,7 @@ export default function Sign() {
             </div>
             <div className="w-[77px] px-3 rounded-[20px] justify-center items-center gap-1 flex">
               <div className="text-blue-600 text-base font-normal font-['Roboto'] leading-normal">
-                <Link href={`/signup`}>Login</Link>
+                <Link href={`/currency`}>Login</Link>
               </div>
             </div>
           </div>

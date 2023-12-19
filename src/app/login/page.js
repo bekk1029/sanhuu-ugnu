@@ -30,7 +30,9 @@ export default function Login() {
               placeholder="Password"
               className="w-full h-12 p-4 bg-gray-100 rounded-lg border border-gray-300 justify-start items-center flex"
             />
-            <Btn value="Log in" />
+            <Link href={`/dashboard`}>
+              <Btn value="Log in" />
+            </Link>
           </div>
           <div className="justify-start  flex">
             <div className="text-slate-900 text-base font-normal font-['Roboto'] leading-normal">
