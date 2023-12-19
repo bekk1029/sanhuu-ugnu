@@ -36,7 +36,9 @@ export default function Sign() {
               placeholder="Re-Password"
               className="w-full h-12 p-4 bg-gray-100 rounded-lg border border-gray-300 justify-start items-center flex"
             />
-            <Btn value="Sign up" />
+            <Link href={`/currency`}>
+              <Btn value="Sign up" />
+            </Link>
           </div>
           <div class="justify-start items-baseline inline-flex">
             <div class="text-slate-900 text-base font-normal font-['Roboto'] leading-normal">

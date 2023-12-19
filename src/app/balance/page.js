@@ -1,15 +1,23 @@
 import { Layout } from "@/components/layout";
 import { Coin } from "@/assets/Coin";
+import { Btn } from "@/components/btn";
+import { Bline } from "@/assets/Bline";
+import { Gline } from "@/assets/Gline";
+import Link from "next/link";
 export default function Balance() {
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center bg-white">
+    <div className="w-full h-screen flex flex-col justify-start items-center pt-40 bg-white gap-[141px]">
       <div class="flex-col justify-start items-center gap-12 flex">
         <Layout />
         <div class="justify-start items-center gap-4 inline-flex">
           <div class="flex-col justify-start items-center gap-1 inline-flex">
             <div class="w-6 h-6 relative">
-              <div class="w-6 h-6 left-0 top-0 absolute bg-blue-600 rounded-full"></div>
-              <div class="w-5 left-[2px] top-[2px] absolute text-center text-white text-sm font-normal font-['Roboto'] leading-tight">
+              <div class="w-6 h-6 left-0 top-0 absolute bg-blue-600 rounded-full">
+                <div className="absolute left-6 top-0">
+                  <Bline />
+                </div>
+              </div>
+              <div class="w-5 left-[2px] top-[2px] absolute text-center text-white text-sm font-normal font-['Roboto'] leading-tight z-10">
                 1
               </div>
             </div>
@@ -20,8 +28,12 @@ export default function Balance() {
           <div class="w-4 self-stretch pb-6 justify-center items-center gap-2 flex"></div>
           <div class="flex-col justify-start items-center gap-1 inline-flex">
             <div class="w-6 h-6 relative">
-              <div class="w-6 h-6 left-0 top-0 absolute bg-blue-600 rounded-full"></div>
-              <div class="w-5 left-[2px] top-[2px] absolute text-center text-white text-sm font-normal font-['Roboto'] leading-tight">
+              <div class="w-6 h-6 left-0 top-0 absolute bg-blue-600 rounded-full">
+                <div className="absolute left-6 top-0">
+                  <Gline />
+                </div>
+              </div>
+              <div class="w-5 left-[2px] top-[2px] absolute text-center text-white text-sm font-normal font-['Roboto'] leading-tight z-50">
                 2
               </div>
             </div>
@@ -33,7 +45,7 @@ export default function Balance() {
           <div class="flex-col justify-start items-center gap-1 inline-flex">
             <div class="w-6 h-6 relative">
               <div class="w-6 h-6 left-0 top-0 absolute bg-gray-200 rounded-full"></div>
-              <div class="w-5 left-[2px] top-[2px] absolute text-center text-slate-900 text-sm font-normal font-['Roboto'] leading-tight">
+              <div class="w-5 left-[2px] top-[2px] absolute text-center text-slate-900 text-sm font-normal font-['Roboto'] leading-tight z-10">
                 3
               </div>
             </div>
@@ -44,7 +56,7 @@ export default function Balance() {
         </div>
       </div>
       <div class="flex-col justify-start items-center gap-8 flex">
-        <div class="self-stretch h-[196px] flex-col justify-start items-center gap-3 flex">
+        <div class="w-full flex-col gap-3 flex">
           <div class="flex-col justify-start items-center gap-6 flex">
             <div class="flex-col justify-start items-center gap-4 flex">
               <div class="p-2 bg-blue-600 rounded-[100px] justify-start items-center gap-2 inline-flex">
@@ -65,11 +77,9 @@ export default function Balance() {
             How much cash do you have in your wallet?
           </div>
         </div>
-        <div class=" h-12 px-4 bg-blue-600 rounded-[20px] justify-center items-center gap-1 inline-flex">
-          <div class="text-white text-xl font-normal font-['Roboto'] leading-7">
-            Confirm{" "}
-          </div>
-        </div>
+        <Link href={`/finish`}>
+          <Btn value="Confirm" />
+        </Link>
       </div>
     </div>
   );

@@ -21,10 +21,12 @@ export default function Login() {
           </div>
           <div className="flex-col justify-start items-start gap-4 flex">
             <input
+              type="email"
               placeholder="Email"
               className="w-full h-12 p-4 bg-gray-100 rounded-lg border border-gray-300 justify-start items-center flex"
             />
             <input
+              type="password"
               placeholder="Password"
               className="w-full h-12 p-4 bg-gray-100 rounded-lg border border-gray-300 justify-start items-center flex"
             />
