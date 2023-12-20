@@ -1,6 +1,8 @@
 import { Layout } from "@/components/layout";
 import { Check } from "@/assets/Check";
 import { Bline } from "@/assets/Bline";
+import { Btn } from "@/components/btn";
+import Link from "next/link";
 export default function Finish() {
   return (
     <div className="w-full h-screen flex flex-col justify-start items-center pt-40 bg-white gap-[141px]">
@@ -69,11 +71,9 @@ export default function Finish() {
             and start tracking
           </div>
         </div>
-        <div class="w-96 h-12 px-4 bg-blue-600 rounded-[20px] justify-center items-center gap-1 flex">
-          <div class="text-white text-xl font-normal font-['Roboto'] leading-7">
-            Go to Dashboard
-          </div>
-        </div>
+        <Link href={`/dashboard`}>
+          <Btn value="Go to Dashboard" />
+        </Link>
       </div>
     </div>
   );
