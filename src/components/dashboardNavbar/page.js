@@ -1,4 +1,6 @@
 import { Vector } from "@/assets/Vector";
+import { AddRecord2 } from "../Addcard2";
+AddRecord2;
 export const DashboardNavbar = () => {
   return (
     <div class="w-full px-[120px] py-4 bg-white justify-between items-center inline-flex">
@@ -29,9 +31,7 @@ export const DashboardNavbar = () => {
               />
             </svg>
           </div>
-          <div class="text-white text-base font-normal font-['Roboto'] leading-normal">
-            Record
-          </div>
+          <AddRecord2 />
         </div>
         <div class="w-16 h-16 flex-col justify-center items-center inline-flex">
           <img

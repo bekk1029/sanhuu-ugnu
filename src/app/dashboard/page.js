@@ -33,7 +33,7 @@ export default function Dashboard() {
                 Cash
               </div>
               <div class="text-center text-white text-2xl font-semibold font-['Roboto'] leading-loose">
-                10,000,00
+                100,000,000,000.00
               </div>
             </div>
             <div class="p-[4.70px] left-[32px] top-[32px] absolute justify-start items-center gap-[8.23px] inline-flex">
@@ -52,7 +52,7 @@ export default function Dashboard() {
               <div class="flex-col justify-start items-start gap-1 flex">
                 <div class="justify-start items-start gap-1 inline-flex">
                   <div class="text-black text-4xl font-medium font-['Roboto'] leading-10">
-                    1,200,000
+                    100020000.00
                   </div>
                   <div class="text-black text-4xl font-medium font-['Roboto'] leading-10">
                     ₮

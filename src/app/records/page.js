@@ -1,4 +1,6 @@
+import { AddRecord } from "@/components/addCard";
 import { DashboardNavbar } from "@/components/dashboardNavbar/page";
+
 export default function Records() {
   return (
     <div className=" w-full h-screen">
@@ -15,12 +17,7 @@ export default function Records() {
                 <div className="text-black text-2xl font-semibold font-['Roboto'] leading-loose">
                   Records
                 </div>
-                <div className="self-stretch h-8 px-3 bg-blue-600 rounded-[20px] justify-center items-center gap-1 inline-flex">
-                  <div className="w-5 h-5 relative" />
-                  <div className="text-white text-base font-normal font-['Roboto'] leading-normal">
-                    Add
-                  </div>
-                </div>
+                <AddRecord />
               </div>
               <div className="h-8 rounded-lg flex-col justify-center items-center flex">
                 <div className="self-stretch h-8 p-4 bg-gray-100 rounded-lg border border-gray-300 justify-start items-center inline-flex">
