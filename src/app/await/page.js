@@ -1,5 +1,5 @@
-import { Vector } from "@/assets/Vector";
-import { Name } from "@/assets/Name";
+import { Vector } from "../../assets/Vector";
+import { Name } from "../../assets/Name";
 export default function Await() {
   return (
     <div className="w-full flex h-screen ">

@@ -1,7 +1,7 @@
-import { Vector } from "@/assets/Vector";
-import { Name } from "@/assets/Name";
+import { Vector } from "../../assets/Vector";
+import { Name } from "../../assets/Name";
 import Link from "next/link";
-import { Btn } from "@/components/btn";
+import { Btn } from "../../components/btn";
 export default function Sign() {
   return (
     <div className="w-full flex h-screen ">

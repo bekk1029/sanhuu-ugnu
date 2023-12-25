@@ -1,14 +1,14 @@
-import { DashboardNavbar } from "@/components/dashboardNavbar/page";
-import { Shape } from "@/assets/Shape";
-import { Wi } from "@/assets/Wi";
-import { Vector2 } from "@/assets/Vector2";
-import { Name1 } from "@/assets/Name1";
-import { House } from "@/assets/House";
-import { Up } from "@/assets/Up";
-import { Down } from "@/assets/Down";
+import { DashboardNavbar } from "../../components/dashboardNavbar/page";
+import { Shape } from "../../assets/Shape";
+import { Wi } from "../../assets/Wi";
+import { Vector2 } from "../../assets/Vector2";
+import { Name1 } from "../../assets/Name1";
+import { House } from "../../assets/House";
+import { Up } from "../../assets/Up";
+import { Down } from "../../assets/Down";
 export default function Dashboard() {
   return (
-    <div className=" w-full h-screen">
+    <div className=" w-full h-screen ">
       <div className="bg-white">
         <div className="max-w-[1400px] m-auto">
           <DashboardNavbar />
@@ -33,7 +33,7 @@ export default function Dashboard() {
                 Cash
               </div>
               <div class="text-center text-white text-2xl font-semibold font-['Roboto'] leading-loose">
-                100,000,000,000.00
+                10,000,00
               </div>
             </div>
             <div class="p-[4.70px] left-[32px] top-[32px] absolute justify-start items-center gap-[8.23px] inline-flex">
@@ -52,7 +52,7 @@ export default function Dashboard() {
               <div class="flex-col justify-start items-start gap-1 flex">
                 <div class="justify-start items-start gap-1 inline-flex">
                   <div class="text-black text-4xl font-medium font-['Roboto'] leading-10">
-                    100020000.00
+                    1,200,000
                   </div>
                   <div class="text-black text-4xl font-medium font-['Roboto'] leading-10">
                     ₮
@@ -326,110 +326,6 @@ export default function Dashboard() {
             </div>
             <div className="self-stretch h-[400px] px-6 flex-col justify-start items-start flex">
               <div className="self-stretch py-5 bg-white border-b border-gray-200 justify-between items-center inline-flex">
-                <div className="justify-start items-center gap-4 flex">
-                  <div className="w-10 h-10 relative">
-                    <div className="w-10 h-10 left-0 top-0 absolute bg-blue-600 rounded-full" />
-                    <div className="w-5 h-5 left-[10px] top-[10px] absolute rounded">
-                      <House />
-                    </div>
-                  </div>
-                  <div className="flex-col justify-center items-start inline-flex">
-                    <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                      Lending & Renting
-                    </div>
-                    <div className="text-gray-500 text-xs font-normal font-['Roboto'] leading-none">
-                      3 hours ago
-                    </div>
-                  </div>
-                </div>
-                <div className="justify-start items-center gap-2 flex">
-                  <div className="text-lime-500 text-base font-semibold font-['Roboto'] leading-normal">
-                    -
-                  </div>
-                  <div className="text-lime-500 text-base font-semibold font-['Roboto'] leading-normal">
-                    1,000₮
-                  </div>
-                </div>
-              </div>
-              <div className="self-stretch py-5 bg-white border-b border-gray-200 justify-between items-center inline-flex">
-                <div className="justify-start items-center gap-4 flex">
-                  <div className="w-10 h-10 relative">
-                    <div className="w-10 h-10 left-0 top-0 absolute bg-blue-600 rounded-full" />
-                    <div className="w-5 h-5 left-[10px] top-[10px] absolute rounded">
-                      <House />
-                    </div>
-                  </div>
-                  <div className="flex-col justify-center items-start inline-flex">
-                    <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                      Lending & Renting
-                    </div>
-                    <div className="text-gray-500 text-xs font-normal font-['Roboto'] leading-none">
-                      3 hours ago
-                    </div>
-                  </div>
-                </div>
-                <div className="justify-start items-center gap-2 flex">
-                  <div className="text-lime-500 text-base font-semibold font-['Roboto'] leading-normal">
-                    -
-                  </div>
-                  <div className="text-lime-500 text-base font-semibold font-['Roboto'] leading-normal">
-                    1,000₮
-                  </div>
-                </div>
-              </div>
-              <div className="self-stretch py-5 bg-white border-b border-gray-200 justify-between items-center inline-flex">
-                <div className="justify-start items-center gap-4 flex">
-                  <div className="w-10 h-10 relative">
-                    <div className="w-10 h-10 left-0 top-0 absolute bg-blue-600 rounded-full" />
-                    <div className="w-5 h-5 left-[10px] top-[10px] absolute rounded">
-                      <House />
-                    </div>
-                  </div>
-                  <div className="flex-col justify-center items-start inline-flex">
-                    <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                      Lending & Renting
-                    </div>
-                    <div className="text-gray-500 text-xs font-normal font-['Roboto'] leading-none">
-                      3 hours ago
-                    </div>
-                  </div>
-                </div>
-                <div className="justify-start items-center gap-2 flex">
-                  <div className="text-lime-500 text-base font-semibold font-['Roboto'] leading-normal">
-                    -
-                  </div>
-                  <div className="text-lime-500 text-base font-semibold font-['Roboto'] leading-normal">
-                    1,000₮
-                  </div>
-                </div>
-              </div>
-              <div className="self-stretch py-5 bg-white border-b border-gray-200 justify-between items-center inline-flex">
-                <div className="justify-start items-center gap-4 flex">
-                  <div className="w-10 h-10 relative">
-                    <div className="w-10 h-10 left-0 top-0 absolute bg-blue-600 rounded-full" />
-                    <div className="w-5 h-5 left-[10px] top-[10px] absolute rounded">
-                      <House />
-                    </div>
-                  </div>
-                  <div className="flex-col justify-center items-start inline-flex">
-                    <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                      Lending & Renting
-                    </div>
-                    <div className="text-gray-500 text-xs font-normal font-['Roboto'] leading-none">
-                      3 hours ago
-                    </div>
-                  </div>
-                </div>
-                <div className="justify-start items-center gap-2 flex">
-                  <div className="text-lime-500 text-base font-semibold font-['Roboto'] leading-normal">
-                    -
-                  </div>
-                  <div className="text-lime-500 text-base font-semibold font-['Roboto'] leading-normal">
-                    1,000₮
-                  </div>
-                </div>
-              </div>
-              <div className="self-stretch py-5 bg-white border-gray-200 justify-between items-center inline-flex">
                 <div className="justify-start items-center gap-4 flex">
                   <div className="w-10 h-10 relative">
                     <div className="w-10 h-10 left-0 top-0 absolute bg-blue-600 rounded-full" />

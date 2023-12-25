@@ -1,11 +1,11 @@
-import { Layout } from "@/components/layout";
-import { Money } from "@/assets/Money";
-import { Btn } from "@/components/btn";
-import { Gline } from "@/assets/Gline";
+import { Layout } from "../../components/layout";
+import { Money } from "../../assets/Money";
+import { Btn } from "../../components/btn";
+import { Gline } from "../../assets/Gline";
 import Link from "next/link";
 export default function Currency() {
   return (
-    <div className="w-full h-screen flex flex-col pt-10 justify-start items-center bg-white gap-[141px]">
+    <div className="w-full h-screen flex flex-col pt-10 justify-start items-center bg-white gap-[100px]">
       <div class="flex-col justify-start items-center gap-12 flex">
         <Layout />
         <div class="justify-start items-center gap-4 flex">

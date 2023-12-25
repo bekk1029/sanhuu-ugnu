@@ -1,11 +1,11 @@
-import { Layout } from "@/components/layout";
-import { Check } from "@/assets/Check";
-import { Bline } from "@/assets/Bline";
-import { Btn } from "@/components/btn";
+import { Layout } from "../../components/layout";
+import { Check } from "../../assets/Check";
+import { Bline } from "../../assets/Bline";
+import { Btn } from "../../components/btn";
 import Link from "next/link";
 export default function Finish() {
   return (
-    <div className="w-full h-screen flex flex-col justify-start items-center pt-40 bg-white gap-[141px]">
+    <div className="w-full h-screen flex flex-col justify-start items-center pt-10 bg-white gap-[100px]">
       <div class="flex-col justify-start items-center gap-12 flex">
         <Layout />
         <div class="justify-start items-center gap-4 flex">

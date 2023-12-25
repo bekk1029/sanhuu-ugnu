@@ -1,18 +1,20 @@
 import { Vector } from "@/assets/Vector";
 import { AddRecord2 } from "../Addcard2";
-AddRecord2;
+import Link from "next/link";
 export const DashboardNavbar = () => {
   return (
     <div class="w-full px-[120px] py-4 bg-white justify-between items-center inline-flex">
       <div class="justify-start items-center gap-6 flex">
         <div class="p-[6.30px] justify-start items-center gap-[11.03px] flex">
-          <Vector />
+          <Link href="/dashboard">
+            <Vector />
+          </Link>
         </div>
         <div class="text-center text-slate-900 text-base font-semibold font-['Roboto'] leading-normal">
-          Dashboard
+          <Link href={`/dashboard`}> Dashboard</Link>
         </div>
         <div class="text-center text-slate-900 text-base font-normal font-['Roboto'] leading-normal">
-          Records
+          <Link href="/records">Records</Link>
         </div>
       </div>
       <div class="justify-start items-center gap-6 flex">
