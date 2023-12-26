@@ -7,7 +7,7 @@ export const AddRecord = () => {
   return (
     <div>
       <div
-        class="self-stretch h-8 px-24 bg-blue-600  rounded-[20px] w justify-center items-center gap-1 inline-flex cursor-pointer"
+        class="h-8 px-24 bg-blue-600  rounded-[20px] w justify-center items-center gap-1 inline-flex cursor-pointer"
         className="btn bg-blue-600 rounded-[20px] w-60"
         onClick={() => document.getElementById("my_modal_3").showModal()}
       >
@@ -35,7 +35,7 @@ export const AddRecord = () => {
                 }} />
             </div> */}
           </div>
-          <div class="self-stretch justify-start items-start inline-flex   ">
+          <div class="justify-start items-start inline-flex   ">
             <div class="grow shrink basis-0 px-6 pt-5 pb-6 bg-white flex-col  justify-start items-start gap-5 inline-flex">
               <div className=" self-stretch bg-gray-100 rounded-[100px] justify-start items-start gap-1 inline-flex">
                 <div
@@ -119,16 +119,16 @@ export const AddRecord = () => {
                 </div>
               </div>
             </div>
-            <div class="grow basis-0 px-6 pt-11 pb-6 bg-white flex-col justify-start items-start gap-5 inline-flex">
-              <div class="self-stretch h-[376px] flex-col justify-start items-start gap-12 flex">
-                <div class="self-stretch h-12 rounded-lg flex-col justify-center items-center flex">
+            <div class="grow basis-0 px-6 pt-11 pb-6 bg-white flex-col justify-start items-start gap-5 flex w-full">
+              <div class="w-full flex-col justify-start items-start gap-12 flex">
+                <div class="w-full rounded-lg flex-col justify-start items-start flex">
                   <div class="h-[18px] justify-start items-start flex">
                     <div class="text-gray-800 text-xl font-normal font-['Roboto'] leading-normal">
                       Payee
                     </div>
                   </div>
                   <input
-                    placeholder="Write here"
+                    placeholder="Saruul"
                     type="text"
                     class="self-stretch h-12 p-4 bg-gray-50 rounded-lg border border-gray-300 justify-start items-center inline-flex"
                   />

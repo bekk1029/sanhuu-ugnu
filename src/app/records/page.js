@@ -1,6 +1,10 @@
 import { AddRecord } from "@/components/addCard";
 import { DashboardNavbar } from "@/components/dashboardNavbar/page";
-import { Plus } from "@/assets/plus";
+import { Food } from "@/assets/Food";
+import { House } from "@/assets/House";
+import { Arrow } from "@/assets/Arrow";
+import { ArrowL } from "@/assets/ArrowL";
+import { DownTo } from "@/assets/DownTo";
 export default function Records() {
   return (
     <div className=" w-full h-screen">
@@ -226,328 +230,123 @@ export default function Records() {
               </div>
             </div>
           </div>
-          <div className="w-1/3 flex flex-col gap-6 justify-start">
-            <div>
-              <div className="w-[180px] h-12 rounded-lg flex-col justify-center items-center inline-flex">
-                <div className="self-stretch h-12 p-4 bg-gray-50 rounded-lg border border-gray-300 justify-start items-center inline-flex">
-                  <div className="grow shrink basis-0 text-gray-800 text-base font-semibold font-['Roboto'] leading-normal">
-                    Newest fisrt
-                  </div>
-                  <div className="w-6 h-6 relative" />
-                </div>
-              </div>
+          <div className="w-full flex flex-col gap-6 justify-start">
+            <div className="flex justify-between">
               <div className="w-[188px] h-8 justify-start items-center gap-4 inline-flex">
                 <div className="w-8 h-8 bg-gray-200 rounded-lg justify-center items-center gap-1 flex">
-                  <div className="w-5 h-5 relative" />
+                  <div className="w-5 h-5 relative">
+                    <Arrow />
+                  </div>
                 </div>
                 <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
                   Last 30 Days
                 </div>
                 <div className="w-8 h-8 bg-gray-200 rounded-lg justify-center items-center gap-1 flex">
-                  <div className="w-5 h-5 relative" />
+                  <div className="w-5 h-5 relative">
+                    <ArrowL />
+                  </div>
+                </div>
+              </div>
+              <div className="w-[180px] h-12 rounded-lg flex-col justify-center items-center inline-flex">
+                <div className="self-stretch h-12 p-4 bg-gray-50 rounded-lg border border-gray-300 justify-start items-center inline-flex">
+                  <div className="grow shrink basis-0 text-gray-800 text-base font-semibold font-['Roboto'] leading-normal">
+                    Newest fisrt
+                  </div>
+                  <div className="w-6 h-6 relative">
+                    <DownTo />
+                  </div>
                 </div>
               </div>
             </div>
-            <div>
-              <div className="w-[894px] h-[980px] flex-col justify-start items-start gap-6 inline-flex">
-                <div className="self-stretch px-6 py-3 bg-white rounded-xl border border-gray-200 justify-between items-center inline-flex">
-                  <div className="justify-start items-center gap-4 flex">
-                    <div className="w-6 h-6 opacity-20 rounded border border-gray-800 justify-center items-center flex" />
-                    <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                      Select all
-                    </div>
-                  </div>
-                  <div className="justify-start items-center gap-2 flex">
-                    <div className="text-slate-400 text-base font-semibold font-['Roboto'] leading-normal">
-                      -
-                    </div>
-                    <div className="text-slate-400 text-base font-semibold font-['Roboto'] leading-normal">
-                      35,500₮
-                    </div>
+            <div className="w-full flex-col justify-start items-start gap-6 inline-flex">
+              <div className="w-full px-6 py-3 bg-white rounded-xl border border-gray-200 justify-between items-center inline-flex">
+                <div className="justify-start items-center gap-4 flex">
+                  <input
+                    type="checkbox"
+                    className="checkbox w-6 h-6 opacity-20 rounded border border-gray-800 justify-center items-center flex"
+                  />
+                  <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
+                    Select all
                   </div>
                 </div>
-                <div className="self-stretch h-[404px] flex-col justify-start items-start gap-3 flex">
-                  <div className="text-black text-base font-semibold font-['Roboto'] leading-normal">
-                    Today
+                <div className="justify-start items-center gap-2 flex">
+                  <div className="text-slate-400 text-base font-semibold font-['Roboto'] leading-normal">
+                    -
                   </div>
-                  <div className="self-stretch h-[368px] flex-col justify-start items-start gap-3 flex">
-                    <div className="self-stretch px-6 py-3 bg-white rounded-xl border border-gray-200 justify-between items-center inline-flex">
-                      <div className="justify-start items-center gap-4 flex">
-                        <div className="w-6 h-6 opacity-20 rounded border border-gray-800" />
-                        <div className="w-10 h-10 relative">
-                          <div className="w-10 h-10 left-0 top-0 absolute bg-blue-600 rounded-full" />
-                          <div className="w-5 h-5 left-[10px] top-[10px] absolute rounded" />
-                        </div>
-                        <div className="flex-col justify-start items-start inline-flex">
-                          <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                            Lending & Renting
-                          </div>
-                          <div className="text-gray-500 text-xs font-normal font-['Roboto'] leading-none">
-                            14:00
-                          </div>
-                        </div>
-                      </div>
-                      <div className="justify-start items-center gap-2 flex">
-                        <div className="text-green-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          -
-                        </div>
-                        <div className="text-green-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          1,000₮
+                  <div className="text-slate-400 text-base font-semibold font-['Roboto'] leading-normal">
+                    35,500₮
+                  </div>
+                </div>
+              </div>
+              <div className="w-full flex-col justify-start items-start gap-3 flex">
+                <div className="text-black text-base font-semibold font-['Roboto'] leading-normal">
+                  Today
+                </div>
+                <div className="w-full flex-col justify-start items-start gap-3 flex">
+                  <div className="w-full px-6 py-3 bg-white rounded-xl border border-gray-200 justify-between items-center inline-flex">
+                    <div className="justify-start items-center gap-4 flex">
+                      <input
+                        type="checkbox"
+                        className="checkbox w-6 h-6 opacity-20 rounded border border-gray-800 justify-center items-center flex"
+                      />
+                      <div className="w-10 h-10 relative">
+                        <div className="w-10 h-10 left-0 top-0 absolute bg-blue-600 rounded-full" />
+                        <div className="w-5 h-5 left-[10px] top-[10px] absolute rounded">
+                          <House />
                         </div>
                       </div>
-                    </div>
-                    <div className="self-stretch px-6 py-3 bg-white rounded-xl border border-gray-200 justify-between items-center inline-flex">
-                      <div className="justify-start items-center gap-4 flex">
-                        <div className="w-6 h-6 opacity-20 rounded border border-gray-800" />
-                        <div className="w-10 h-10 relative">
-                          <div className="w-10 h-10 left-0 top-0 absolute bg-red-500 rounded-full" />
-                          <div className="w-5 h-5 left-[10px] top-[10px] absolute rounded" />
+                      <div className="flex-col justify-start items-start inline-flex">
+                        <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
+                          Lending & Renting
                         </div>
-                        <div className="flex-col justify-start items-start inline-flex">
-                          <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                            Food & Drinks
-                          </div>
-                          <div className="text-gray-500 text-xs font-normal font-['Roboto'] leading-none">
-                            14:00
-                          </div>
-                        </div>
-                      </div>
-                      <div className="justify-start items-center gap-2 flex">
-                        <div className="text-red-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          -
-                        </div>
-                        <div className="text-red-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          1,000₮
+                        <div className="text-gray-500 text-xs font-normal font-['Roboto'] leading-none">
+                          14:00
                         </div>
                       </div>
                     </div>
-                    <div className="self-stretch px-6 py-3 bg-white rounded-xl border border-gray-200 justify-between items-center inline-flex">
-                      <div className="justify-start items-center gap-4 flex">
-                        <div className="w-6 h-6 opacity-20 rounded border border-gray-800" />
-                        <div className="w-10 h-10 relative">
-                          <div className="w-10 h-10 left-0 top-0 absolute bg-red-500 rounded-full" />
-                          <div className="w-5 h-5 left-[10px] top-[10px] absolute rounded" />
-                        </div>
-                        <div className="flex-col justify-start items-start inline-flex">
-                          <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                            Food & Drinks
-                          </div>
-                          <div className="text-gray-500 text-xs font-normal font-['Roboto'] leading-none">
-                            14:00
-                          </div>
-                        </div>
+                    <div className="justify-start items-center gap-2 flex">
+                      <div className="text-green-500 text-base font-semibold font-['Roboto'] leading-normal">
+                        -
                       </div>
-                      <div className="justify-start items-center gap-2 flex">
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          -
-                        </div>
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          1,000₮
-                        </div>
-                      </div>
-                    </div>
-                    <div className="self-stretch px-6 py-3 bg-white rounded-xl border border-gray-200 justify-between items-center inline-flex">
-                      <div className="justify-start items-center gap-4 flex">
-                        <div className="w-6 h-6 opacity-20 rounded border border-gray-800" />
-                        <div className="w-10 h-10 relative">
-                          <div className="w-10 h-10 left-0 top-0 absolute bg-red-500 rounded-full" />
-                          <div className="w-5 h-5 left-[10px] top-[10px] absolute rounded" />
-                        </div>
-                        <div className="flex-col justify-start items-start inline-flex">
-                          <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                            Food & Drinks
-                          </div>
-                          <div className="text-gray-500 text-xs font-normal font-['Roboto'] leading-none">
-                            14:00
-                          </div>
-                        </div>
-                      </div>
-                      <div className="justify-start items-center gap-2 flex">
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          -
-                        </div>
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          1,000₮
-                        </div>
-                      </div>
-                    </div>
-                    <div className="self-stretch px-6 py-3 bg-white rounded-xl border border-gray-200 justify-between items-center inline-flex">
-                      <div className="justify-start items-center gap-4 flex">
-                        <div className="w-6 h-6 opacity-20 rounded border border-gray-800" />
-                        <div className="w-10 h-10 relative">
-                          <div className="w-10 h-10 left-0 top-0 absolute bg-red-500 rounded-full" />
-                          <div className="w-5 h-5 left-[10px] top-[10px] absolute rounded" />
-                        </div>
-                        <div className="flex-col justify-start items-start inline-flex">
-                          <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                            Food & Drinks
-                          </div>
-                          <div className="text-gray-500 text-xs font-normal font-['Roboto'] leading-none">
-                            14:00
-                          </div>
-                        </div>
-                      </div>
-                      <div className="justify-start items-center gap-2 flex">
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          -
-                        </div>
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          1,000₮
-                        </div>
+                      <div className="text-green-500 text-base font-semibold font-['Roboto'] leading-normal">
+                        1,000₮
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="self-stretch h-[480px] flex-col justify-start items-start gap-3 flex">
-                  <div className="text-black text-base font-semibold font-['Roboto'] leading-normal">
-                    Yesterday
-                  </div>
-                  <div className="self-stretch h-[444px] flex-col justify-start items-start gap-3 flex">
-                    <div className="self-stretch px-6 py-3 bg-white rounded-xl border border-gray-200 justify-between items-center inline-flex">
-                      <div className="justify-start items-center gap-4 flex">
-                        <div className="w-6 h-6 opacity-20 rounded border border-gray-800" />
-                        <div className="w-10 h-10 relative">
-                          <div className="w-10 h-10 left-0 top-0 absolute bg-red-500 rounded-full" />
-                          <div className="w-5 h-5 left-[10px] top-[10px] absolute rounded" />
-                        </div>
-                        <div className="flex-col justify-start items-start inline-flex">
-                          <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                            Food & Drinks
-                          </div>
-                          <div className="text-gray-500 text-xs font-normal font-['Roboto'] leading-none">
-                            14:00
-                          </div>
+              </div>
+              <div className="w-full flex-col justify-start items-start gap-3 flex">
+                <div className="text-black text-base font-semibold font-['Roboto'] leading-normal">
+                  Yesterday
+                </div>
+                <div className="w-full flex-col justify-start items-start gap-3 flex">
+                  <div className=" w-full px-6 py-3 bg-white rounded-xl border border-gray-200 justify-between items-center inline-flex">
+                    <div className="justify-start items-center gap-4 flex">
+                      <input
+                        type="checkbox"
+                        className="checkbox w-6 h-6 opacity-20 rounded border border-gray-800 justify-center items-center flex"
+                      />
+                      <div className="w-10 h-10 relative">
+                        <div className="w-10 h-10 left-0 top-0 absolute bg-red-500 rounded-full" />
+                        <div className="w-5 h-5 left-[10px] top-[10px] absolute rounded">
+                          <Food />
                         </div>
                       </div>
-                      <div className="justify-start items-center gap-2 flex">
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          -
+                      <div className="flex-col justify-start items-start inline-flex">
+                        <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
+                          Food & Drinks
                         </div>
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          1,000₮
+                        <div className="text-gray-500 text-xs font-normal font-['Roboto'] leading-none">
+                          14:00
                         </div>
                       </div>
                     </div>
-                    <div className="self-stretch px-6 py-3 bg-white rounded-xl border border-gray-200 justify-between items-center inline-flex">
-                      <div className="justify-start items-center gap-4 flex">
-                        <div className="w-6 h-6 opacity-20 rounded border border-gray-800" />
-                        <div className="w-10 h-10 relative">
-                          <div className="w-10 h-10 left-0 top-0 absolute bg-red-500 rounded-full" />
-                          <div className="w-5 h-5 left-[10px] top-[10px] absolute rounded" />
-                        </div>
-                        <div className="flex-col justify-start items-start inline-flex">
-                          <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                            Food & Drinks
-                          </div>
-                          <div className="text-gray-500 text-xs font-normal font-['Roboto'] leading-none">
-                            14:00
-                          </div>
-                        </div>
+                    <div className="justify-start items-center gap-2 flex">
+                      <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
+                        -
                       </div>
-                      <div className="justify-start items-center gap-2 flex">
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          -
-                        </div>
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          1,000₮
-                        </div>
-                      </div>
-                    </div>
-                    <div className="self-stretch px-6 py-3 bg-white rounded-xl border border-gray-200 justify-between items-center inline-flex">
-                      <div className="justify-start items-center gap-4 flex">
-                        <div className="w-6 h-6 opacity-20 rounded border border-gray-800" />
-                        <div className="w-10 h-10 relative">
-                          <div className="w-10 h-10 left-0 top-0 absolute bg-red-500 rounded-full" />
-                          <div className="w-5 h-5 left-[10px] top-[10px] absolute rounded" />
-                        </div>
-                        <div className="flex-col justify-start items-start inline-flex">
-                          <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                            Food & Drinks
-                          </div>
-                          <div className="text-gray-500 text-xs font-normal font-['Roboto'] leading-none">
-                            14:00
-                          </div>
-                        </div>
-                      </div>
-                      <div className="justify-start items-center gap-2 flex">
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          -
-                        </div>
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          1,000₮
-                        </div>
-                      </div>
-                    </div>
-                    <div className="self-stretch px-6 py-3 bg-white rounded-xl border border-gray-200 justify-between items-center inline-flex">
-                      <div className="justify-start items-center gap-4 flex">
-                        <div className="w-6 h-6 opacity-20 rounded border border-gray-800" />
-                        <div className="w-10 h-10 relative">
-                          <div className="w-10 h-10 left-0 top-0 absolute bg-red-500 rounded-full" />
-                          <div className="w-5 h-5 left-[10px] top-[10px] absolute rounded" />
-                        </div>
-                        <div className="flex-col justify-start items-start inline-flex">
-                          <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                            Food & Drinks
-                          </div>
-                        </div>
-                      </div>
-                      <div className="justify-start items-center gap-2 flex">
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          -
-                        </div>
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          1,000₮
-                        </div>
-                      </div>
-                    </div>
-                    <div className="self-stretch px-6 py-3 bg-white rounded-xl border border-gray-200 justify-between items-center inline-flex">
-                      <div className="justify-start items-center gap-4 flex">
-                        <div className="w-6 h-6 opacity-20 rounded border border-gray-800" />
-                        <div className="w-10 h-10 relative">
-                          <div className="w-10 h-10 left-0 top-0 absolute bg-red-500 rounded-full" />
-                          <div className="w-5 h-5 left-[10px] top-[10px] absolute rounded" />
-                        </div>
-                        <div className="flex-col justify-start items-start inline-flex">
-                          <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                            Food & Drinks
-                          </div>
-                          <div className="text-gray-500 text-xs font-normal font-['Roboto'] leading-none">
-                            14:00
-                          </div>
-                        </div>
-                      </div>
-                      <div className="justify-start items-center gap-2 flex">
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          -
-                        </div>
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          1,000₮
-                        </div>
-                      </div>
-                    </div>
-                    <div className="self-stretch px-6 py-3 bg-white rounded-xl border border-gray-200 justify-between items-center inline-flex">
-                      <div className="justify-start items-center gap-4 flex">
-                        <div className="w-6 h-6 opacity-20 rounded border border-gray-800" />
-                        <div className="w-10 h-10 relative">
-                          <div className="w-10 h-10 left-0 top-0 absolute bg-red-500 rounded-full" />
-                          <div className="w-5 h-5 left-[10px] top-[10px] absolute rounded" />
-                        </div>
-                        <div className="flex-col justify-start items-start inline-flex">
-                          <div className="text-black text-base font-normal font-['Roboto'] leading-normal">
-                            Food & Drinks
-                          </div>
-                          <div className="text-gray-500 text-xs font-normal font-['Roboto'] leading-none">
-                            14:00
-                          </div>
-                        </div>
-                      </div>
-                      <div className="justify-start items-center gap-2 flex">
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          -
-                        </div>
-                        <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
-                          1,000₮
-                        </div>
+                      <div className="text-yellow-500 text-base font-semibold font-['Roboto'] leading-normal">
+                        1,000₮
                       </div>
                     </div>
                   </div>

@@ -1,14 +1,14 @@
-import { DashboardNavbar } from "../../components/dashboardNavbar/page";
-import { Shape } from "../../assets/Shape";
-import { Wi } from "../../assets/Wi";
-import { Vector2 } from "../../assets/Vector2";
-import { Name1 } from "../../assets/Name1";
-import { House } from "../../assets/House";
-import { Up } from "../../assets/Up";
-import { Down } from "../../assets/Down";
+import { DashboardNavbar } from "@/components/dashboardNavbar/page";
+import { Shape } from "@/assets/Shape";
+import { Wi } from "@/assets/Wi";
+import { Vector2 } from "@/assets/Vector2";
+import { Name1 } from "@/assets/Name1";
+import { House } from "@/assets/House";
+import { Up } from "@/assets/Up";
+import { Down } from "@/assets/Down";
 export default function Dashboard() {
   return (
-    <div className=" w-full h-screen ">
+    <div className=" w-full h-screen">
       <div className="bg-white">
         <div className="max-w-[1400px] m-auto">
           <DashboardNavbar />
@@ -33,7 +33,7 @@ export default function Dashboard() {
                 Cash
               </div>
               <div class="text-center text-white text-2xl font-semibold font-['Roboto'] leading-loose">
-                10,000,00
+                100,000,000,000.00
               </div>
             </div>
             <div class="p-[4.70px] left-[32px] top-[32px] absolute justify-start items-center gap-[8.23px] inline-flex">
@@ -45,14 +45,14 @@ export default function Dashboard() {
             <div class="self-stretch px-6 py-4 border-b border-slate-200 justify-start items-center gap-2 inline-flex">
               <div class="w-2 h-2 bg-lime-500 rounded-full"></div>
               <div class="text-slate-900 text-base font-semibold font-['Roboto'] leading-normal">
-                Your Income
+                s Your Income
               </div>
             </div>
             <div class="self-stretch h-40 px-6 pt-5 pb-6 flex-col justify-start items-start gap-4 flex">
               <div class="flex-col justify-start items-start gap-1 flex">
                 <div class="justify-start items-start gap-1 inline-flex">
                   <div class="text-black text-4xl font-medium font-['Roboto'] leading-10">
-                    1,200,000
+                    100020000.00
                   </div>
                   <div class="text-black text-4xl font-medium font-['Roboto'] leading-10">
                     ₮
