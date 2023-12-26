@@ -5,6 +5,7 @@ import { Plus } from "@/assets/plus";
 
 export const AddRecord2 = (props) => {
   const [color, setColor] = useState(false);
+
   return (
     <div>
       <div
@@ -81,7 +82,7 @@ export const AddRecord2 = (props) => {
                       class="self-stretch h-[76px] px-4 py-3 bg-gray-100 rounded-lg border border-gray-300 flex-col justify-center items-start flex"
                     >
                       <option disabled selected>
-                        Who shot first?
+                        Choose
                       </option>
                       <option>Han Solo</option>
                       <option>Greedo</option>
